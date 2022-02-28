@@ -7,6 +7,7 @@ import {
   FlatList,
   TouchableOpacity,
   SafeAreaView,
+  StyleSheet,
 } from 'react-native';
 import { Fonts, Colors, Sizes } from '../../constant/styles';
 
