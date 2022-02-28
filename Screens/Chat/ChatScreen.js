@@ -10,6 +10,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import { Fonts, Colors, Sizes } from '../../constant/styles';
+import { useNavigation } from '@react-navigation/native';
 
 const doctorsList = [
   {
@@ -78,7 +79,9 @@ const doctorsList = [
   },
 ];
 
-const ChatScreen = ({ navigation }) => {
+const ChatScreen = () => {
+  const navigation = useNavigation();
+
   function doctors() {
     const renderItem = ({ item }) => {
       return (
